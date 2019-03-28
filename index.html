@@ -1,0 +1,35 @@
+<html>
+<head>
+  <h2>AIESEC YSF Sign Up</h2>
+</head>
+<body>
+  <form action="option.html" onsubmit="validateform()">
+    <input type="text" placeholder="First Name" id="fname" size="25" /><br></br>
+    <input type="text" placeholder="Last name" id="lname" size="25" /><br></br>
+    <input type="email" placeholder="Email@example.com" id="email" size="25" /><br></br>
+    <input type="password" placeholder="Password" id="pwd" size="25" /><br></br>
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+    function validateform(){
+      valid = true;
+      var x=document.getElementById('fname').value;
+      var y=document.getElementById('lname').value;
+      var z=document.getElementById('email').value;
+      var a=document.getElementById('pwd').value;
+      if (x=="") {
+        alert("Please fill the first name");
+      }
+      if (y=="") {
+        alert("Please fill the last name");
+      }
+      if (z=="") {
+        alert("Please fill the email");
+      }
+      if (a=="") {
+        alert("Please fill the password");
+      }
+    }
+  </script>
+</body>
+</html>
